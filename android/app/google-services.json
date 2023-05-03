@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "826638998114",
+    "project_id": "festiveapp-cd2e2",
+    "storage_bucket": "festiveapp-cd2e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826638998114:android:6e9e424d02f7d748b60f3b",
+        "android_client_info": {
+          "package_name": "com.example.festive_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826638998114-6vhpfk4mm1b0phq9llc7e9dhbug34n52.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0h8vDU_BLrDJ5WsH0H8ahMPl6Rx6AGYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826638998114-6vhpfk4mm1b0phq9llc7e9dhbug34n52.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
