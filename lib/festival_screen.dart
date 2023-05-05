@@ -60,10 +60,11 @@ class _MyFestivalScreenState extends State<MyFestivalScreen>
   Widget build(BuildContext context) {
     TabController tabController = TabController(length: 3, vsync: this);
     return DefaultTabController(
-        length: 2,
+        length: 3
+        ,
         child: Scaffold(
           body: MyBgScreen(
-            height: 150,
+            height: 120,
             UpperChild: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [

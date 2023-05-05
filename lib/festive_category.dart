@@ -40,7 +40,7 @@ class _MyFestiveCategoryState extends State<MyFestiveCategory> {
       backgroundColor: Colors.white,
       body: SizedBox(
         child: MyBgScreen(
-          height: 150,
+          height: 120,
           UpperChild: Padding(
             padding: const EdgeInsets.all(10.0),
             child: Column(
