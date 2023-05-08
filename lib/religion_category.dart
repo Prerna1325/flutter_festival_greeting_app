@@ -100,12 +100,12 @@ class _MyReligionScreenState extends State<MyReligionScreen> {
                                   gridDelegate:
                                       SliverGridDelegateWithFixedCrossAxisCount(
                                           crossAxisCount: 2,
-                                          mainAxisSpacing: 6),
+                                          mainAxisSpacing: 0),
                                   shrinkWrap: true,
                                   itemCount: snapshot.data!.docs.length,
                                   itemBuilder: (context, index) {
                                     return Padding(
-                                      padding: const EdgeInsets.all(8.0),
+                                      padding: const EdgeInsets.all(6.0),
                                       child: InkWell(
                                         onTap: () {
                                           var religions_id = snapshot
@@ -124,10 +124,9 @@ class _MyReligionScreenState extends State<MyReligionScreen> {
                                                       )));
                                         },
                                         child: Container(
-                                            height: MediaQuery.of(context)
-                                                .size
-                                                .height,
-                                            width: 20,
+                                            // height: MediaQuery.of(context)
+                                            //     .size
+                                            //     .height,
                                             decoration: BoxDecoration(
                                                 color: Colors.white,
                                                 boxShadow: [
@@ -198,7 +197,8 @@ class _MyReligionScreenState extends State<MyReligionScreen> {
                                                             snapshot.data?.docs[
                                                                     index][
                                                                 'religion_name'],
-                                                            style: GoogleFonts.habibi(
+                                                            style: GoogleFonts
+                                                                .habibi(
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .bold,
