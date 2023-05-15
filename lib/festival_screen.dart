@@ -6,6 +6,7 @@ import 'package:festive_app/religion_category.dart';
 import 'package:festive_app/tabbar_images_data.dart';
 import 'package:festive_app/tabbar_quotes_data.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class MyFestivalScreen extends StatefulWidget {
   MyFestivalScreen(
@@ -103,22 +104,20 @@ class _MyFestivalScreenState extends State<MyFestivalScreen>
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => MyReligionScreen()));
+                              builder: (context) =>
+                                  MyReligionScreen()));
                     },
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(18),
                       child: Stack(
                         children: [
-                          CircleAvatar(
-                            radius: 20,
-                            backgroundColor: Colors.white,
-                          ),
+                          CircleAvatar(radius: 24,backgroundColor: Colors.white,),
                           Padding(
-                            padding: const EdgeInsets.all(5.0),
-                            child: Icon(
-                              Icons.home_rounded,
-                              size: 30,
-                              color: Color(0xff331c50),
+                            padding: const EdgeInsets.all(4.0),
+                            child: Lottie.asset(
+                              'assets/animations/93492-home-icon.json',
+                              width: 42,
+
                             ),
                           ),
                         ],

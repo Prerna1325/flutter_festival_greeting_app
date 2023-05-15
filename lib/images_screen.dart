@@ -3,6 +3,7 @@ import 'package:festive_app/new_bg_screen.dart';
 import 'package:festive_app/religion_category.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:lottie/lottie.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:share_plus/share_plus.dart';
 
@@ -29,7 +30,7 @@ class ImageScreen extends StatelessWidget {
         child: SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               BackButton(
                 color: Colors.white,
@@ -52,19 +53,18 @@ class ImageScreen extends StatelessWidget {
                             builder: (context) => MyReligionScreen()));
                   },
                   child: Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(18),
                     child: Stack(
                       children: [
                         CircleAvatar(
-                          radius: 20,
+                          radius: 24,
                           backgroundColor: Colors.white,
                         ),
                         Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: Icon(
-                            Icons.home_rounded,
-                            size: 30,
-                            color: Color(0xff331c50),
+                          padding: const EdgeInsets.all(4.0),
+                          child: Lottie.asset(
+                            'assets/animations/93492-home-icon.json',
+                            width: 42,
                           ),
                         ),
                       ],
@@ -131,10 +131,10 @@ class ImageScreen extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                                 color: Color(0xffffdb24),
-                                borderRadius: BorderRadius.circular(20)),
-                            height: 50,
+                                borderRadius: BorderRadius.circular(10)),
+                            height: 60,
                             child: Padding(
-                              padding: const EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.all(10.0),
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -146,12 +146,16 @@ class ImageScreen extends StatelessWidget {
                                         fontSize: 20),
                                   ),
                                   SizedBox(
-                                    width: 10,
+                                    width: 5,
                                   ),
-                                  Image.asset(
-                                    'assets/images/export-share-icon.webp',
-                                    height: 22,
+                                  Lottie.network(
+                                    'https://assets6.lottiefiles.com/packages/lf20_b1h2fd/share_02.json',
+                                    width: 40,
                                   )
+                                  // Image.asset(
+                                  //   'assets/images/export-share-icon.webp',
+                                  //   height: 22,
+                                  // )
                                 ],
                               ),
                             ),
@@ -174,8 +178,8 @@ class ImageScreen extends StatelessWidget {
                           child: Container(
                         decoration: BoxDecoration(
                             color: Color(0xffffdb24),
-                            borderRadius: BorderRadius.circular(20)),
-                        height: 50,
+                            borderRadius: BorderRadius.circular(10)),
+                        height: 60,
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Row(
@@ -188,9 +192,13 @@ class ImageScreen extends StatelessWidget {
                                     fontSize: 20, fontWeight: FontWeight.bold),
                               ),
                               SizedBox(
-                                width: 10,
+                                width: 5,
                               ),
-                              Icon(Icons.download),
+                              Lottie.network(
+                                  'https://assets4.lottiefiles.com/packages/lf20_hdmkzp2n.json',
+                                  width: 55)
+
+                              //Icon(Icons.download),
                             ],
                           ),
                         ),
