@@ -1,16 +1,19 @@
 # festive_app
 
-A new Flutter project.
+A Flutter-based application that allows users to explore festivals based on religion and share festival-specific images and quotes.
 
-## Getting Started
+Features
 
-This project is a starting point for a Flutter application.
+✅ Religion-Based Festival Selection – Users select a religion to view its festivals.
+✅ Festival Listing – Displays a list of festivals based on the selected religion.
+✅ Festival Details – Shows festival-specific wishing images and quotes.
+✅ Tab-Based Navigation – Users can switch between images and quotes using a TabBar.
+✅ Image Sharing & Download – Users can share or download festival images.
+✅ Quote Sharing – Users can share festival wishes with others.
 
-A few resources to get you started if this is your first Flutter project:
+Tech Stack
+ 
+Framework: Flutter
+Backend: Firebase 
+Database: Firebase Firestore 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
